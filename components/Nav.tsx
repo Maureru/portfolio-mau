@@ -16,9 +16,13 @@ function Nav() {
   const navControl = useAnimationControls()
 
 
+
   useEffect(() => {
     setMounted(true)
-
+    control.start("hide")
+    setTimeout(() => {
+      control.start("show")
+    }, 500)
   }, [])
 
   
