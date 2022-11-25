@@ -15,7 +15,7 @@ import Icon from '../components/Icon';
 import ProjectCard from '../components/ProjectCard';
 import Footer from '../components/Footer';
 import { AnimatePresence, motion, useAnimationControls } from 'framer-motion';
-import { fadeInUp, hero, letterSpace, rotateProfession, stagger } from '../data/animation';
+import { fadeInUp, hero, letterSpace, rotateProfession, roundBorder, stagger } from '../data/animation';
 import FadeVisible from '../components/FadeVisible';
 import SkillModal from '../components/SkillModal';
 import { useEffect, useState } from 'react';
@@ -105,7 +105,7 @@ I am software engineer that specializes at backend apis, front end integration, 
               }
             </motion.div>
           </motion.div>
-          <div className='h-[100%] hidden lg:block z-40 w-[100%] absolute lg:right-0 xl:right-10 rounded bg-transparent border-r-4 border-[#b96a59] dark:border-[#c58d69]' style={{borderRadius: '69% 31% 28% 72% / 100% 50% 50% 0% '}}></div>
+          <motion.div variants={roundBorder} initial="initial" animate="animate" className='h-[100%] hidden lg:block z-40 w-[100%] absolute lg:right-0 xl:right-10 rounded bg-transparent border-r-4 border-[#b96a59] dark:border-[#c58d69]' style={{borderRadius: '69% 31% 28% 72% / 100% 50% 50% 0% '}}></motion.div>
           
         </div>
         {/* Portfolio Main */}

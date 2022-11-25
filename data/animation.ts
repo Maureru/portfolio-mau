@@ -102,6 +102,20 @@ const fadeInUp = {
       },
     },
   }
+
+export const roundBorder = {
+  initial: {
+    opacity: 0
+  },
+  animate: {
+    opacity: 1,
+    scale: [0.8, 1.08, 1],
+    transition: {
+      ease: easing,
+      duration: Duration.slow
+    }
+  }
+}
   
   const menuAnim = {
     hide: {
