@@ -106,14 +106,13 @@ const fadeInUp = {
   const menuAnim = {
     hide: {
       
-      y: -80,
+      y: -60,
       transition: {
         ease: 'linear',
         duration: 0.05,
       },
     },
     show: {
-      
       y: 0,
       transition: {
         ease: 'linear',
