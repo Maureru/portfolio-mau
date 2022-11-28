@@ -1,15 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/Button';
-import { BsTwitter } from 'react-icons/bs'
-import { BsInstagram } from 'react-icons/bs'
-import { BsFacebook } from 'react-icons/bs'
 import { RiShareBoxFill } from 'react-icons/ri'
 /* Skill Icons */
 
 import Nav from '../components/Nav';
 import Link from 'next/link';
-import logo from '../public/logo_mau.svg'
 import { profile, Projects, Skills } from '../data/portfolioData';
 import Icon from '../components/Icon';
 import ProjectCard from '../components/ProjectCard';
@@ -87,10 +83,10 @@ export default function Home() {
             <motion.p variants={fadeInUp} className='mt-2'>Or you could call me {profile.nickName}, that works too . . .</motion.p>
             <motion.h2 variants={fadeInUp} className='mt-2 font-bold text-xl text-[#b96a59] dark:text-[#c58d69]'>{profile.profession}</motion.h2>
             <motion.p variants={fadeInUp} className='xl:mr-44 mr-4 xl:mr-18 text-[13px] mt-2 text-gray-800 dark:text-gray-300'>Hey! How nice of you to look at my personal site, <span className='font-semibold text-[#b96a59] dark:text-[#c58d69]'>Thank you!</span><br></br>
-I am software engineer that specializes at backend apis, front end integration, recently found myself studying UX too.</motion.p>
+I am a software engineer freelancer based in the Philippines.</motion.p>
             <motion.div variants={fadeInUp}>
             <Button className="bg-purple-600 px-6 mt-5 text-gray-100" onClick={() => {}}>
-              Get in touch!
+              Hire Me!
             </Button>
             </motion.div>
             <motion.div variants={fadeInUp} className='flex gap-4 mt-5'>
@@ -122,8 +118,8 @@ I am software engineer that specializes at backend apis, front end integration, 
           <FadeVisible>
           <div className='mt-5 px-4  h-auto xl:h-[100vh] block xl:flex items-center'>
             <div className='w-[100%] xl:w-[60%] '>
-              <h1 className='segoe text-[48px] font-bold' style={{fontVariant:'small-caps'}}>What i do.</h1>
-              <h2 className=' text-[16px] leading-[24px] poppins mt-6'>I`ve been coding professionally for 6 years now and currently working as a <span className='font-bold'>Software Engineer</span> that focuses on architecture, APIs, nitty-gritty business logics and even front end integration stuff now, how time flies!</h2>
+              <h1 className='segoe text-[48px] font-bold' style={{fontVariant:'small-caps'}}>My craft.</h1>
+              <h2 className=' text-[16px] leading-[24px] poppins mt-6'>I`ve been coding stuff for 2 years and now currently working as a <span className='font-bold'>Software Engineer</span> that focuses on APIs and front end integration.</h2>
               <h2 className='mt-6 text-[16px] leading-[24px] poppins'>Here are few technologies that are cup of my tea coffee .</h2>
               {/* Skills */}
               <div className='mt-6 flex flex-col gap-4'>
@@ -154,7 +150,7 @@ I am software engineer that specializes at backend apis, front end integration, 
           <FadeVisible>
           <div className='mr-0 p-4 xl:mr-56 pb-16'>
             <h2 className='text-[48px] segoe smallCaps font-bold'>Some of my works.</h2>
-            <p className='mt-6'>Check out some of the works I made at freelancing, company projects and even case studies.</p>
+            <p className='mt-6'>Check out some of the works I made.</p>
             <div className='mt-6 flex flex-col gap-6'>
               {
                 Projects.slice(0).reverse().map((project, i) => {
@@ -191,9 +187,7 @@ I am software engineer that specializes at backend apis, front end integration, 
             </div>
           </div>
           </FadeVisible>
-          <FadeVisible>
           <Footer/>
-          </FadeVisible>
         </div>
       </main>
     </div>
