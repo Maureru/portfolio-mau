@@ -213,7 +213,7 @@ export const Projects: Project[] = [
     name: 'Mau Blog',
     tech: ['React', 'Redux', 'Express', 'Node', 'MongoDB'],
     link: 'https://aesthetic-liger-76762c.netlify.app/',
-    image: 'maublog.ong',
+    image: 'maublog.png',
     details: 'My very first React project.'
   },
   {
