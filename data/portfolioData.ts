@@ -213,30 +213,38 @@ export const Projects: Project[] = [
     name: 'Mau Blog',
     tech: ['React', 'Redux', 'Express', 'Node', 'MongoDB'],
     link: 'https://aesthetic-liger-76762c.netlify.app/',
-    image: '1.png',
-    details: 'My very first React blogging system project.'
-  },
-  {
-    name: 'Text Portrait Maker',
-    tech: ['React', 'Typescript'],
-    link: 'https://62e6ae7ca868167856120bfa--bucolic-chimera-45106b.netlify.app/',
-    image: '2.png',
-    details: 'Text portrait maker with download option. This turns the user image into a text portrait'
-  },
-  {
-    name: 'Ravens',
-    tech: ['Typescript', 'React', 'Node', 'Express', 'MySQL'],
-    link: 'https://monumental-puffpuff-fad65e.netlify.app/',
-    image: '3.png',
-    details: 'Ravens is social media website'
+    image: 'maublog.ong',
+    details: 'My very first React project.'
   },
   {
     name: 'Youtube Live Chat Games',
     tech: ['Node', 'jQuery', 'Youtube Data Api v3'],
     link: '',
     image: 'ytgames.png',
-    details: 'Ravens is social media website'
+    details: 'Help us defeat Mr. Will Smith Slapper to prevent him SLAP! off our planet earth out of the solar system!!'
   },
+  {
+    name: 'Text Portrait Maker',
+    tech: ['React', 'Typescript'],
+    link: 'https://62e6ae7ca868167856120bfa--bucolic-chimera-45106b.netlify.app/',
+    image: 'portrait.png',
+    details: 'Create amazing and cool text portrait for your social profile'
+  },
+  {
+    name: 'Ravens',
+    tech: ['Typescript', 'React', 'Node', 'Express', 'MySQL'],
+    link: 'https://monumental-puffpuff-fad65e.netlify.app/',
+    image: 'ravenspor.png',
+    details: 'Share what you do and socialize online with RAVENS social media'
+  },
+  {
+    name: 'ORX - Clothing (ecommerce)',
+    tech: ['Typescript', 'NextJs', 'Node', 'Mongoose'],
+    link: 'https://monumental-puffpuff-fad65e.netlify.app/',
+    image: 'ORXeco.png',
+    details: 'NextJs Ecommerce with Paypal Integration'
+  },
+  
   
   
   
