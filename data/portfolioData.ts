@@ -238,9 +238,9 @@ export const Projects: Project[] = [
     details: 'Share what you do and socialize online with RAVENS social media'
   },
   {
-    name: 'ORX - Clothing (ecommerce)',
+    name: 'ORX - Clothing',
     tech: ['Typescript', 'NextJs', 'Node', 'Mongoose'],
-    link: 'https://monumental-puffpuff-fad65e.netlify.app/',
+    link: 'https://orxecommerce.vercel.app',
     image: 'ORXeco.png',
     details: 'NextJs Ecommerce with Paypal Integration'
   },
