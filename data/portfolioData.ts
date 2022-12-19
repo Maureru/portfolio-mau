@@ -35,7 +35,7 @@ export const profile: {
   secondName: 'MAUREL',
   lastName: 'Marapao',
   nickName: 'Mau',
-  profession: 'Software/Mechanical Engineer',
+  profession: 'Software Engineer',
   email: 'james.maurels@gmail.com',
   image: '/avatar.png',
   logo: logos,
@@ -124,14 +124,14 @@ export const FullSkill: {
       name: 'PHP (Vanilla, Wordpress)',
       icon: SiPhp,
     },
-    {
+    /* {
       name: 'Laravel',
       icon: SiLaravel,
     },
     {
       name: 'Django',
       icon: SiDjango
-    }
+    } */
   ],
   frontend: [
     {

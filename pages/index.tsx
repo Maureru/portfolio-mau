@@ -120,7 +120,7 @@ I am a software engineer freelancer based in the Philippines.</motion.p>
             <div className='w-[100%] xl:w-[60%] '>
               <h1 className='segoe text-[48px] font-bold' style={{fontVariant:'small-caps'}}>My craft.</h1>
               <h2 className=' text-[16px] leading-[24px] poppins mt-6'>I`ve been coding stuff for 2 years and now currently working as a <span className='font-bold'>Software Engineer</span> that focuses on APIs and front end integration.</h2>
-              <h2 className='mt-6 text-[16px] leading-[24px] poppins'>Here are few technologies that are cup of my tea coffee .</h2>
+              <h2 className='mt-6 text-[16px] leading-[24px] poppins'>Here are few technologies that are cup of my tea.</h2>
               {/* Skills */}
               <div className='mt-6 flex flex-col gap-4'>
                 <div className='grid grid-cols-2'>
