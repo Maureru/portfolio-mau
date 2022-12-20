@@ -244,6 +244,13 @@ export const Projects: Project[] = [
     image: 'ORXeco.png',
     details: 'NextJs Ecommerce with Paypal Integration'
   },
+  {
+    name: 'Dictionary Online',
+    tech: ['Typescript', 'NextJs'],
+    link: 'https://dictionary-online.vercel.app/',
+    image: 'dictionary.png',
+    details: 'Explore new words and improve your vocabulary with the online dictionary.'
+  },
   
   
   
