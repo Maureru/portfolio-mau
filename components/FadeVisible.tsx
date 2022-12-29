@@ -7,7 +7,7 @@ function FadeVisible({children}: {children: React.ReactNode}) {
 
     const controls = useAnimation()
     const [ref, inView] = useInView({
-        threshold: 0.3
+        threshold: 0.1
     })
 
     useEffect(() => {
