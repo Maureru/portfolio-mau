@@ -251,6 +251,13 @@ export const Projects: Project[] = [
     image: 'dictionary.png',
     details: 'Explore new words and improve your vocabulary with the online dictionary.'
   },
+  {
+    name: 'Mau Resume Builder',
+    tech: ['Typescript', 'React', 'Redux'],
+    link: 'https://mau-resume-builder.vercel.app/',
+    image: 'resumebuilder.png',
+    details: 'Create outstanding and impressive resumes online with Mau-Resume Builder.'
+  },
   
   
   
