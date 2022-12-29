@@ -239,7 +239,7 @@ export const Projects: Project[] = [
   },
   {
     name: 'ORX - Clothing',
-    tech: ['Typescript', 'NextJs', 'Node', 'Mongoose'],
+    tech: ['Typescript', 'NextJs', 'Context Api', 'Node', 'Mongoose'],
     link: 'https://orxecommerce.vercel.app',
     image: 'ORXeco.png',
     details: 'NextJs Ecommerce with Paypal Integration'
