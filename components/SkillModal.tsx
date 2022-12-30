@@ -27,7 +27,7 @@ function SkillModal({ close }: {close: () => void}) {
   const uiCol = splitSkills(FullSkill['ui framework']);
 
   return (
-    <div className="fixed z-[100] flex justify-center items-center w-screen h-screen bg-black/20">
+    <div className="fixed z-[100] flex justify-center items-center top-0 left-0 w-screen h-screen bg-black/20">
       <motion.div
         ref={contRef}
         variants={fadeInUp}
