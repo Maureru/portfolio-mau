@@ -1,7 +1,7 @@
 import { IconType } from 'react-icons'
 import logos from 'public/logo_mau.svg'
 
-import { SiJavascript, SiMysql, SiNodedotjs } from 'react-icons/si'
+import { SiJavascript, SiMysql, SiNodedotjs, SiRedux } from 'react-icons/si'
 import { SiTypescript } from 'react-icons/si'
 import { SiPython } from 'react-icons/si'
 import { SiPhp, SiMaterialui } from 'react-icons/si'
@@ -149,6 +149,10 @@ export const FullSkill: {
     {
       name: 'Javascript Vanilla',
       icon: SiJavascript
+    },
+    {
+      name: 'Redux',
+      icon: SiRedux
     },
   ],
   database: [
