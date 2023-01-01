@@ -262,6 +262,13 @@ export const Projects: Project[] = [
     image: 'resumebuilder.png',
     details: 'Create outstanding and impressive resumes online with Mau-Resume Builder.'
   },
+  {
+    name: 'eVoting Platform',
+    tech: ['Typescript', 'NextJs', 'Redux', 'Mongoose'],
+    link: '/',
+    image: 'eVoting.png',
+    details: 'Create an e-Voting platform for your school or organization.'
+  },
   
   
   

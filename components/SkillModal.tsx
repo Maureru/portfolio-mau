@@ -21,6 +21,8 @@ function SkillModal({ close }: {close: () => void}) {
     return () => removeEventListener('mousedown', getTarget);
   }, []);
 
+  
+
   const backendCol = splitSkills(FullSkill.backend);
   const frontendCol = splitSkills(FullSkill.frontend);
   const databaseCol = splitSkills(FullSkill.database);
