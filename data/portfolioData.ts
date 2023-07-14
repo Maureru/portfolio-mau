@@ -37,7 +37,7 @@ export const profile: {
   nickName: 'Mau',
   profession: 'Software Engineer',
   email: 'james.maurels@gmail.com',
-  image: '/avatarME.png',
+  image: '/avatar.png',
   logo: logos,
   socials: [
     {
