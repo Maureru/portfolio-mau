@@ -37,7 +37,7 @@ export const profile: {
   nickName: 'Mau',
   profession: 'Software Engineer',
   email: 'james.maurels@gmail.com',
-  image: '/avatar.png',
+  image: '/avatarME.png',
   logo: logos,
   socials: [
     {
@@ -241,13 +241,7 @@ export const Projects: Project[] = [
     image: 'ravenspor.png',
     details: 'Share what you do and socialize online with RAVENS social media'
   },
-  {
-    name: 'ORX - Clothing',
-    tech: ['Typescript', 'NextJs', 'Context Api', 'Node', 'Mongoose'],
-    link: 'https://orxecommerce.vercel.app',
-    image: 'ORXeco.png',
-    details: 'NextJs Ecommerce with Paypal Integration'
-  },
+  
   {
     name: 'Dictionary Online',
     tech: ['Typescript', 'NextJs'],
@@ -261,6 +255,20 @@ export const Projects: Project[] = [
     link: 'https://mau-resume-builder.vercel.app/',
     image: 'resumebuilder.png',
     details: 'Create outstanding and impressive resumes online with Mau-Resume Builder.'
+  },
+  {
+    name: 'Tic Tac Toee',
+    tech: ['Node', 'React', 'ExpressJs', 'Mongoose'],
+    link: 'https://tictactoe-client.vercel.app/',
+    image: 'tictactoe.png',
+    details: 'Fun and Exciting Tic Tac Toe game to play with your friends'
+  },
+  {
+    name: 'ORX - Clothing',
+    tech: ['Typescript', 'NextJs', 'Context Api', 'Node', 'Mongoose'],
+    link: 'https://orxecommerce.vercel.app',
+    image: 'ORXeco.png',
+    details: 'NextJs Ecommerce with Paypal Integration'
   },
   {
     name: 'eVoting Platform',
