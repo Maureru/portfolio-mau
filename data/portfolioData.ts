@@ -208,6 +208,7 @@ export type Project = {
   link: string
   image: string,
   details: string,
+  status: string
 }
 
 export const Projects: Project[] = [
@@ -218,28 +219,32 @@ export const Projects: Project[] = [
     tech: ['React', 'Redux', 'Express', 'Node', 'MongoDB'],
     link: 'https://aesthetic-liger-76762c.netlify.app/',
     image: 'maublog.png',
-    details: 'My very first React project.'
+    details: 'My very first React project.',
+    status: ''
   },
   {
     name: 'Youtube Live Chat Games',
     tech: ['Node', 'jQuery', 'Youtube Data Api v3'],
     link: '',
     image: 'ytgames.png',
-    details: 'Help us defeat Mr. Will Smith Slapper to prevent him SLAP! off our planet earth out of the solar system!!'
+    details: 'Help us defeat Mr. Will Smith Slapper to prevent him SLAP! off our planet earth out of the solar system!!',
+    status: ''
   },
   {
     name: 'Text Portrait Maker',
     tech: ['React', 'Typescript'],
     link: 'https://62e6ae7ca868167856120bfa--bucolic-chimera-45106b.netlify.app/',
     image: 'portrait.png',
-    details: 'Create amazing and cool text portrait for your social profile'
+    details: 'Create amazing and cool text portrait for your social profile',
+    status: ''
   },
   {
     name: 'Ravens',
     tech: ['Typescript', 'React', 'Node', 'Express', 'MySQL'],
     link: 'https://monumental-puffpuff-fad65e.netlify.app/',
     image: 'ravenspor.png',
-    details: 'Share what you do and socialize online with RAVENS social media'
+    details: 'Share what you do and socialize online with RAVENS social media',
+    status: ''
   },
   
   {
@@ -247,35 +252,40 @@ export const Projects: Project[] = [
     tech: ['Typescript', 'NextJs'],
     link: 'https://dictionary-online.vercel.app/',
     image: 'dictionary.png',
-    details: 'Explore new words and improve your vocabulary with the online dictionary.'
+    details: 'Explore new words and improve your vocabulary with the online dictionary.',
+    status: ''
   },
   {
     name: 'Mau Resume Builder',
     tech: ['Typescript', 'React', 'Redux'],
     link: 'https://mau-resume-builder.vercel.app/',
     image: 'resumebuilder.png',
-    details: 'Create outstanding and impressive resumes online with Mau-Resume Builder.'
+    details: 'Create outstanding and impressive resumes online with Mau-Resume Builder.',
+    status: ''
   },
   {
     name: 'Tic Tac Toee',
     tech: ['Node', 'React', 'ExpressJs', 'Mongoose'],
     link: 'https://tictactoe-client.vercel.app/',
     image: 'tictactoe.png',
-    details: 'Fun and Exciting Tic Tac Toe game to play with your friends'
+    details: 'Fun and Exciting Tic Tac Toe game to play with your friends',
+    status: ''
   },
   {
     name: 'ORX - Clothing',
     tech: ['Typescript', 'NextJs', 'Context Api', 'Node', 'Mongoose'],
     link: 'https://orxecommerce.vercel.app',
     image: 'ORXeco.png',
-    details: 'NextJs Ecommerce with Paypal Integration'
+    details: 'NextJs Ecommerce with Paypal Integration',
+    status: ''
   },
   {
     name: 'eVoting Platform',
     tech: ['Typescript', 'NextJs', 'Redux', 'Mongoose'],
     link: '/',
     image: 'eVoting.png',
-    details: 'Create an e-Voting platform for your school or organization.'
+    details: 'Create an e-Voting platform for your school or organization.',
+    status: 'on going'
   },
   
   
