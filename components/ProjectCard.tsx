@@ -4,6 +4,7 @@ import React from 'react';
 import { Project } from '../data/portfolioData';
 import Button from './Button';
 import TechChunk from './TechChunk';
+import { BsFillGearFill } from 'react-icons/bs';
 
 function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
   return (
@@ -14,8 +15,9 @@ function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
         }`}
       >
         {data.status === 'on going' && (
-          <span className="absolute top-3 text-white right-3 text-[0.6rem] p-1 bg-orange-500 font-thin rounded-md uppercase">
+          <span className="absolute animate-pulse flex items-center gap-1 top-3 text-white right-3 text-[0.6rem] p-1 bg-orange-500 font-semibold rounded-md uppercase">
             On Going
+            <BsFillGearFill className="animate-spin text-[0.7rem]" />
           </span>
         )}
         <div className="w-full">
