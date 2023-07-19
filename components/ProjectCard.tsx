@@ -31,14 +31,16 @@ function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
             ))}
           </div>
           <p className="mt-6 text-sm">{data.details}</p>
-          <Link href={data.link} target="_blank">
-            <Button
-              className="border-2 border-slate-900 dark:border-slate-200 mt-6"
-              onClick={() => {}}
-            >
-              Check Project
-            </Button>
-          </Link>
+          {data.status !== 'on going' && (
+            <Link href={data.link} target="_blank">
+              <Button
+                className="border-2 border-slate-900 dark:border-slate-200 mt-6"
+                onClick={() => {}}
+              >
+                Check Project
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
       <div className="w-[100%] overflow-hidden group/image h-[100%] relative">
