@@ -9,7 +9,7 @@ import { SiReact, SiMongodb, SiFirebase, SiStyledcomponents } from 'react-icons/
 import { SiNextdotjs, SiDjango, SiExpress, SiLaravel, SiJquery } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { GrMysql } from 'react-icons/gr'
-import { BsTwitter, BsInstagram, BsGithub } from 'react-icons/bs'
+import { BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs'
 
 export type Skill = {
   name: string,
@@ -49,6 +49,11 @@ export const profile: {
       name: 'Instagram',
       link: 'https://www.instagram.com/mauxxix_/',
       icon: BsInstagram
+    },
+    {
+      name: 'Linkedin',
+      link: 'https://www.linkedin.com/in/maurel-marapao-462581251/',
+      icon: BsLinkedin
     },
     {
       name: 'Github',
