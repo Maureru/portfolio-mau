@@ -6,11 +6,19 @@ import Button from './Button';
 import TechChunk from './TechChunk';
 import { BsFillGearFill } from 'react-icons/bs';
 
-function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
+function ProjectCard({
+  isEven,
+  data,
+  num,
+}: {
+  isEven: boolean;
+  data: Project;
+  num: number;
+}) {
   return (
-    <div className="overflow-hidden w-[100%] grid grid-cols-1 sm:grid-cols-2 h-[22rem] sm:h-auto xl:h-80 bg-zinc-200 shadow-md dark:bg-zinc-800 rounded-[1rem]">
+    <div className="overflow-hidden hover:shadow-lg hover:shadow-[#b96a59]/50 hover:dark:shadow-[#c58d69]/50 transition-all w-[100%] grid grid-cols-1 sm:grid-cols-2 h-[22rem] sm:h-auto xl:h-80 bg-zinc-200 shadow-md dark:bg-zinc-800 rounded-[1rem]">
       <div
-        className={`pl-4 relative py-4 pr-12 flex flex-col h-[100%] w-full justify-center order-last items-center ${
+        className={`pl-4 relative py-4 pr-4 flex flex-col h-[100%] w-full justify-center order-last items-center ${
           isEven ? 'sm:order-last' : 'sm:order-first'
         }`}
       >
@@ -21,7 +29,11 @@ function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
           </span>
         )}
         <div className="w-full">
-          <p className="text-[32px] font-bold uppercase leading-[48px] tracking-wide">
+          <p className="text-[32px] font-bold uppercase leading-[40px] tracking-wide">
+            <span className="text-[1rem] dark:text-gray-400 text-gray-600">
+              #{num < 10 ? '0' : null}
+              {num}{' '}
+            </span>
             {data.name}
           </p>
           <div className="h-[1px] w-full bg-gray-200" />
@@ -31,16 +43,18 @@ function ProjectCard({ isEven, data }: { isEven: boolean; data: Project }) {
             ))}
           </div>
           <p className="mt-6 text-sm">{data.details}</p>
-          {data.status !== 'on going' && (
-            <Link href={data.link} target="_blank">
-              <Button
-                className="border-2 border-slate-900 dark:border-slate-200 mt-6"
-                onClick={() => {}}
-              >
-                Check Project
-              </Button>
-            </Link>
-          )}
+          <div className="w-full flex justify-center">
+            {data.status !== 'on going' && (
+              <Link href={data.link} target="_blank">
+                <Button
+                  className="border py-1 px-2 rounded-none border-slate-900 dark:border-slate-200 mt-6 hover:ring-0 hover:bg-black hover:bg-opacity-10"
+                  onClick={() => {}}
+                >
+                  Check Project
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
       <div className="w-[100%] overflow-hidden group/image h-[100%] relative">

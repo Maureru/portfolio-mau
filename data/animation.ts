@@ -43,6 +43,10 @@ const fadeInUp = {
       y: 80,
       opacity: 0,
     },
+    exit: {
+      y: 20,
+      opacity: 0,
+    },
     animate: {
       y: 0,
       opacity: 1,
@@ -51,6 +55,18 @@ const fadeInUp = {
         ease: easing,
       },
     },
+  }
+
+  const animateEmo = {
+    animate: {
+      rotate: [-45, 45, -45, 45, -45, 45, 0],
+      y: [0,0,0,0,0,0, -10, 0, -10, 0, -10, 0, -10, 0, -10, 0],
+      scale: [1, 1.2, 1.2, 1.4, 1],
+      transition: {
+        duration: 3,
+        ease: easing,
+      },
+    }
   }
   
   const letterSpace = {
@@ -204,6 +220,7 @@ export const hero = {
   }
   
   export {
+    animateEmo,
     Duration,
     easing,
     fadeInUp,

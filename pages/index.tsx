@@ -107,12 +107,20 @@ export default function Home() {
               <br></br>I am a software engineer freelancer based in the
               Philippines.
             </motion.p>
-            <motion.div variants={fadeInUp}>
+            <motion.div className=" flex gap-3" variants={fadeInUp}>
               <Button
                 className="bg-purple-600 px-6 mt-5 text-gray-100"
                 onClick={() => {}}
               >
                 <a href={`mailto:${profile.email}`}>Hire Me!</a>
+              </Button>
+              <Button
+                className="bg-transparent group border border-white rounded-none hover:ring-0 px-6 mt-5 text-gray-100"
+                onClick={() => {}}
+              >
+                <a className="" href={``}>
+                  Blog
+                </a>
               </Button>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex gap-4 mt-5">
@@ -171,9 +179,13 @@ export default function Home() {
                   My craft.
                 </h1>
                 <h2 className=" text-[16px] leading-[24px] poppins mt-6">
-                  I`ve been coding stuff for 2 years and now currently working
-                  as a <span className="font-bold">Software Engineer</span> that
-                  focuses on APIs and front end integration.
+                  After years of coding experience, I now work as a{' '}
+                  <span className="font-bold hover:animate-pulse text-[#b96a59] dark:text-[#c58d69]">
+                    Software Developer
+                  </span>{' '}
+                  specializing in APIs and front-end integration, crafting
+                  seamless connections between systems and creating
+                  user-friendly interfaces.
                 </h2>
                 <h2 className="mt-6 text-[16px] leading-[24px] poppins">
                   Here are few technologies that are cup of my tea.
@@ -224,30 +236,38 @@ export default function Home() {
           </FadeVisible>
 
           {/* ================ Projects */}
-          <FadeVisible>
-            <div className="mr-0 p-4 xl:mr-56 pb-16">
-              <h2 className="text-[48px] segoe smallCaps font-bold">
-                Some of my works.
-              </h2>
-              <p className="mt-6">Check out some of the works I made.</p>
-              <div className="mt-6 flex flex-col gap-6">
-                {
-                  Projects.slice(0)
-                    .reverse()
-                    .map((project, i) => {
-                      const j = i + 1;
-                      var isEven;
-                      if (j % 2 == 0) {
-                        isEven = true;
-                      } else {
-                        isEven = false;
-                      }
-                      return (
-                        <ProjectCard key={i} isEven={isEven} data={project} />
-                      );
-                    })
+          <div className="mr-0 p-4 xl:mr-56 pb-16">
+            <h2 className="text-[48px] segoe smallCaps font-bold">
+              Some of my works.
+            </h2>
+            <p className="mt-6">
+              Check out some of the works I made - a captivating collection of
+              personal projects showcasing my passion for Software Development.
+            </p>
+            <div className="mt-6 flex flex-col gap-6">
+              {
+                Projects.slice(0)
+                  .reverse()
+                  .map((project, i) => {
+                    const j = i + 1;
+                    var isEven;
+                    if (j % 2 == 0) {
+                      isEven = true;
+                    } else {
+                      isEven = false;
+                    }
+                    return (
+                      <FadeVisible key={i}>
+                        <ProjectCard
+                          num={i + 1}
+                          isEven={isEven}
+                          data={project}
+                        />
+                      </FadeVisible>
+                    );
+                  })
 
-                  /* manga.map((mang, i) => {
+                /* manga.map((mang, i) => {
 
                   const coverId = mang.relationships.filter(item => item.type === "cover_art")[0].id;
                   
@@ -263,10 +283,10 @@ export default function Home() {
                     <h1 key={i}>{}</h1>
                   )
                 }) */
-                }
-              </div>
+              }
             </div>
-          </FadeVisible>
+          </div>
+
           <Footer />
         </div>
       </main>

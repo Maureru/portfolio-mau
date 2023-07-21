@@ -129,14 +129,14 @@ export const FullSkill: {
       name: 'PHP (Vanilla, Wordpress)',
       icon: SiPhp,
     },
-    /* {
+    {
       name: 'Laravel',
       icon: SiLaravel,
     },
     {
       name: 'Django',
       icon: SiDjango
-    } */
+    }
   ],
   frontend: [
     {
@@ -219,24 +219,17 @@ export type Project = {
 export const Projects: Project[] = [
   
   
+  
   {
-    name: 'Mau Blog',
-    tech: ['React', 'Redux', 'Express', 'Node', 'MongoDB'],
-    link: 'https://aesthetic-liger-76762c.netlify.app/',
-    image: 'maublog.png',
-    details: 'My very first React project.',
-    status: ''
-  },
-  {
-    name: 'Youtube Live Chat Games',
+    name: 'YT Chat Games',
     tech: ['Node', 'jQuery', 'Youtube Data Api v3'],
     link: '',
-    image: 'ytgames.png',
+    image: 'slaps.png',
     details: 'Help us defeat Mr. Will Smith Slapper to prevent him SLAP! off our planet earth out of the solar system!!',
     status: ''
   },
   {
-    name: 'Text Portrait Maker',
+    name: 'Text Portrait',
     tech: ['React', 'Typescript'],
     link: 'https://62e6ae7ca868167856120bfa--bucolic-chimera-45106b.netlify.app/',
     image: 'portrait.png',

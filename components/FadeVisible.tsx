@@ -1,31 +1,32 @@
-import React, { useEffect } from 'react'
-import {motion, useAnimation} from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { fadeInUpSlower } from '../data/animation'
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { fadeInUpSlower } from '../data/animation';
 
-function FadeVisible({children}: {children: React.ReactNode}) {
+function FadeVisible({ children }: { children: React.ReactNode }) {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
 
-    const controls = useAnimation()
-    const [ref, inView] = useInView({
-        threshold: 0.1
-    })
-
-    useEffect(() => {
-        if (inView) {
-            controls.start("animate")
-        }
-    }, [inView, controls])
+  useEffect(() => {
+    if (inView) {
+      controls.start('animate');
+    } else {
+      controls.start('exit');
+    }
+  }, [inView, controls]);
 
   return (
     <motion.div
-    ref={ref}
-    variants={fadeInUpSlower}
-    initial="initial"
-    animate={controls}
+      ref={ref}
+      variants={fadeInUpSlower}
+      initial="initial"
+      animate={controls}
     >
-        {children}
+      {children}
     </motion.div>
-  )
+  );
 }
 
-export default FadeVisible
+export default FadeVisible;
