@@ -109,13 +109,13 @@ export default function Home() {
             </motion.p>
             <motion.div className=" flex gap-3" variants={fadeInUp}>
               <Button
-                className="bg-purple-600 px-6 mt-5 text-gray-100"
+                className="bg-purple-600  px-6 mt-5 text-gray-100"
                 onClick={() => {}}
               >
                 <a href={`mailto:${profile.email}`}>Hire Me!</a>
               </Button>
               <Button
-                className="bg-transparent group border border-white rounded-none hover:ring-0 px-6 mt-5 text-gray-100"
+                className="bg-transparent group border border-black dark:border-white px-6 mt-5 "
                 onClick={() => {}}
               >
                 <a className="" href={``}>
