@@ -94,3 +94,21 @@ a {
 .title-color {
   color: var(--title-color);
 }
+
+.moveSlow {
+  
+  animation: moveSlows 2s linear infinite;
+}
+
+@keyframes moveSlows {
+  0% {
+    transform: translateX(-10px) translateY(-50%) rotate(-90deg); /* Start position */
+  }
+  50% {
+    transform: translateX(10px) translateY(-50%) rotate(-90deg); /* Move right 100px */
+  }
+  100% {
+    transform: translateX(-10px) translateY(-50%) rotate(-90deg); /* Back to the start position */
+  }
+  
+}

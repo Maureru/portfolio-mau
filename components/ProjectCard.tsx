@@ -16,7 +16,7 @@ function ProjectCard({
   num: number;
 }) {
   return (
-    <div className="overflow-hidden hover:shadow-lg hover:shadow-[#b96a59]/50 hover:dark:shadow-[#c58d69]/50 transition-all w-[100%] grid grid-cols-1 sm:grid-cols-2 h-[22rem] sm:h-auto xl:h-80 bg-zinc-200 shadow-md dark:bg-zinc-800 rounded-[1rem]">
+    <div className="overflow-hidden hover:shadow-md hover:shadow-[#b96a59]/50 hover:dark:shadow-[#c58d69]/50 transition-all w-[100%] grid grid-cols-1 sm:grid-cols-2 h-[22rem] sm:h-auto xl:h-80 bg-zinc-200 shadow-md dark:bg-zinc-800 rounded-[1rem]">
       <div
         className={`pl-4 relative py-4 pr-4 flex flex-col h-[100%] w-full justify-center order-last items-center ${
           isEven ? 'sm:order-last' : 'sm:order-first'

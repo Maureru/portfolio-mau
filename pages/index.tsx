@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/Button';
 import { RiShareBoxFill } from 'react-icons/ri';
+import { PiHandTapLight } from 'react-icons/pi';
 /* Skill Icons */
 
 import Nav from '../components/Nav';
@@ -115,12 +116,13 @@ export default function Home() {
                 <a href={`mailto:${profile.email}`}>Hire Me!</a>
               </Button>
               <Button
-                className="bg-transparent group border border-black dark:border-white px-6 mt-5 "
+                className="bg-transparent relative group border border-black dark:border-white px-6 mt-5 "
                 onClick={() => {}}
               >
                 <a className="" href={``}>
                   Blog
                 </a>
+                <PiHandTapLight className="absolute moveSlow -rotate-90 text-[2rem] -right-12 top-[50%] -translate-y-[50%]" />
               </Button>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex gap-4 mt-5">

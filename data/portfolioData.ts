@@ -4,7 +4,7 @@ import logos from 'public/logo_mau.svg'
 import { SiJavascript, SiMysql, SiNodedotjs, SiRedux } from 'react-icons/si'
 import { SiTypescript } from 'react-icons/si'
 import { SiPython } from 'react-icons/si'
-import { SiPhp, SiMaterialui } from 'react-icons/si'
+import { SiPhp, SiMui } from 'react-icons/si'
 import { SiReact, SiMongodb, SiFirebase, SiStyledcomponents } from 'react-icons/si'
 import { SiNextdotjs, SiDjango, SiExpress, SiLaravel, SiJquery } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
@@ -57,7 +57,7 @@ export const profile: {
     },
     {
       name: 'Github',
-      link: 'https://twitter.com/mauuxxix',
+      link: 'https://github.com/Maureru',
       icon: BsGithub
     },
   ]
@@ -181,7 +181,7 @@ export const FullSkill: {
     },
     {
       name: 'Material UI',
-      icon: SiMaterialui
+      icon: SiMui
     },
   ]
 }
