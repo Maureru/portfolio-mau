@@ -274,7 +274,7 @@ export const Projects: Project[] = [
     tech: ['Typescript', 'NextJs', 'Context Api', 'Node', 'Mongoose'],
     link: 'https://orxecommerce.vercel.app',
     image: 'ORXeco.png',
-    details: 'NextJs Ecommerce with Paypal Integration',
+    details: 'NextJs Ecommerce with Paypal Integration. Admin: Email: maco.senseii@gmail.com, Password: macosenseii',
     status: ''
   },
   {
@@ -283,6 +283,14 @@ export const Projects: Project[] = [
     link: '/',
     image: 'eVoting.png',
     details: 'Create an e-Voting platform for your school or organization.',
+    status: 'on going'
+  },
+  {
+    name: 'Recipe Web App',
+    tech: ['Typescript', 'NextJs', 'Edaman Recipe API'],
+    link: '/',
+    image: 'recipe_app.jpg',
+    details: 'Explore and find different delicacies that suits your taste!',
     status: 'on going'
   },
   
