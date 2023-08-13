@@ -285,6 +285,14 @@ export const Projects: Project[] = [
     details: 'Create an e-Voting platform for your school or organization.',
     status: 'on going'
   },
+  {
+    name: 'Anime Villain',
+    tech: ['Typescript', 'React', 'Jikan Api', 'Tailwind CSS'],
+    link: 'https://animevillain.vercel.app/',
+    image: 'animevillain.png',
+    details: 'Explore and enjoy a vast collection of your favorite anime, choosing from thousands of anime available on Anime Villain."',
+    status: ''
+  },
   
   
 ]
