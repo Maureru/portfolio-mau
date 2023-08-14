@@ -288,7 +288,7 @@ export const Projects: Project[] = [
   {
     name: 'Anime Villain',
     tech: ['Typescript', 'React', 'Jikan Api', 'Tailwind CSS'],
-    link: 'https://64d9fd81bc78e724d6d10336--tangerine-sundae-64dadb.netlify.app/',
+    link: 'https://animevillains.vercel.app/',
     image: 'animevillain.png',
     details: 'Explore and enjoy a vast collection of your favorite anime, choosing from thousands of anime available on Anime Villain."',
     status: ''
