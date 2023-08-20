@@ -293,6 +293,14 @@ export const Projects: Project[] = [
     details: 'Explore and enjoy a vast collection of your favorite anime, choosing from thousands of anime available on Anime Villain."',
     status: ''
   },
+  {
+    name: 'RavenX - Chat & Video Call',
+    tech: ['Typescript', 'React', 'Redux', 'MongoDB', 'Express', 'WebRTC', 'Socket.io'],
+    link: '',
+    image: 'ravenx.png',
+    details: 'Chat and connect with your friends online',
+    status: 'on going'
+  },
   
   
 ]
