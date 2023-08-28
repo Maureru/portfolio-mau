@@ -298,7 +298,7 @@ export const Projects: Project[] = [
     tech: ['Typescript', 'React', 'Redux', 'MongoDB', 'Express', 'WebRTC', 'Socket.io'],
     link: 'https://ravens-x-xmauu.vercel.app/',
     image: 'ravenx.png',
-    details: 'A communication web application that enables users to engage in chats and make video calls.',
+    details: 'Web app that enables users to engage in chats and make video calls.',
     status: ''
   },
   
