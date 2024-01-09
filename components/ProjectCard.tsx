@@ -57,7 +57,7 @@ function ProjectCard({
           </div>
         </div>
       </div>
-      <div className="w-[100%] overflow-hidden group/image h-[22rem] sm:h-[100%] relative">
+      <div className="w-[100%] overflow-hidden group/image h-[18rem] sm:h-[100%] relative">
         <Image
           className="group-hover/image:scale-110 hover:ease-in ease-out duration-100"
           objectFit="cover"
